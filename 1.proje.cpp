@@ -2,6 +2,15 @@
 #include <conio.h>
 main()
 {
-	printf("Bilgisayar programciligi");
-	getch();
+int sayi1;
+printf("sayiyi girin");
+scanf("%d",&sayi1);
+
+if(sayi1%2==0)
+printf("sayi cift");
+
+else
+printf("sayi tek");
+
+getch();
 }
