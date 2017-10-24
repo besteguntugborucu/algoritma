@@ -1,14 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
+#include <time.h>
 main()
 {
-	int sayi=0;
-	int sonuc=1;
-	printf("sayi girin");
-	scanf("%d",&sayi);
-	for(int i=sayi; i>=1;i--)
-	sonuc=sonuc*i;
-	
-	printf("%d !=%d",sayi,sonuc);
-getch();
+	int adet=9;
+	int bosluk=1;
+	for(int i=0; i<5;i++)
+	{
+		for(int a=0;a<bosluk;a++)
+		printf(" ");
+		for(int j=0;j<adet;j++)
+		printf("*");
+		
+		
+		adet-=2;
+		bosluk+=2;
+		printf("\n");
+	}
+	getch();
 }

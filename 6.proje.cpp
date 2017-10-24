@@ -1,14 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
+#include <time.h>
 main()
 {
-int sayi1,sayi2;
-printf("birinci sayiyi girin :");
-scanf("%d",&sayi1);
-
-printf("ikinci sayiyi girin :");
-scanf("%d",&sayi2);
-
-if(sayi1>sayi2)
-	printf("birinci sayi ikinci sayidan buyuk");
+	int son=5;
+	for(int i=0; i<5;i++)
+	{
+		for(int j=1;j<=son;j++)
+		printf("%d",j);
+		
+	
+		
+		
+		son--;
+		printf("\n");
+	}
+	getch();
 }

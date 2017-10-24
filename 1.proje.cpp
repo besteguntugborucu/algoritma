@@ -1,14 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 #include <time.h>
 main()
 {
-	int sayi=0;
-	srand(time(NULL));
-	sayi=5+rand()%100;
-	sayi=3+rand()%5;
-	
-	printf("%d\n",sayi);
-getch();
+	int adet=1;
+	for(int i=1; i<7;i++)
+	{
+		for(int j=0;j<adet;j++)
+		printf("*");
+		printf("\n");
+		adet++;
+	}
+	getch();
 }
